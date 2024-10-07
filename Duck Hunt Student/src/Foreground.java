@@ -1,17 +1,19 @@
+import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Stroke;
 import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.geom.AffineTransform;
 import java.net.URL;
 
-public class Duck extends Character {
-
-	public Duck() {
-		super("greenduck.gif");
+public class Foreground extends Character {
+	
+	public Foreground() {
+		super("foreground.png");
 	}
-	
+
 }
-	

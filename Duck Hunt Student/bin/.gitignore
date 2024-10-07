@@ -1,4 +1,13 @@
-/Duck.class
 /Frame.class
+/GameBackground.class
 /Music.class
+/StdAudio$1.class
+/StdAudio$BackgroundRunnable.class
+/StdAudio$QueueOfDoubles.class
+/StdAudio.class
+/ducky.class
+/Ground.class
+/Foreground.class
+/Hunter.class
+/Eye.class
 /imgs/

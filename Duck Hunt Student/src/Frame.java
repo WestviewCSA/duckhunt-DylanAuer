@@ -15,11 +15,37 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 public class Frame extends JPanel implements ActionListener, MouseListener, KeyListener {
-	Duck d = new Duck();
+	
+	Duck duck = new Duck();
+	Foreground foreground = new Foreground();
+	Hunter hunter = new Hunter();
+	Eye eye = new Eye();
+	
+	GameBackground ground = new GameBackground("background1.png");
+	
+	public void init() {
+		//initializing scale etc
+	}	
+	public void reset() {
+		
+	}
 	
 	public void paint(Graphics g) {
 		super.paintComponent(g);
-		d.paint(g);
+		ground.paint(g);
+		ground.setScale(4,4);
+		duck.setScale(2,2);
+		duck.paint(g);
+		duck.setY(400);
+		duck.setVx(5);
+		duck.setVy(-5);
+		eye.setScale(3, 3);
+		foreground.paint(g);
+		hunter.paint(g);
+		hunter.setX(650);
+		hunter.setY(440);
+		hunter.setScale(4, 4);
+		
 	}
 	
 	public static void main(String[] arg) {
@@ -28,7 +54,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 	
 	public Frame() {
 		JFrame f = new JFrame("Duck Hunt");
-		f.setSize(new Dimension(900, 600));
+		f.setSize(new Dimension(800, 600));
 		f.setBackground(Color.blue);
 		f.add(this);
 		f.setResizable(false);
